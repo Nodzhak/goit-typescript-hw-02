@@ -11,7 +11,7 @@ type AllType = {
   weight: number;
 }
 
-function compare <T, A extends keyof AllType, B extends keyof AllType> (
+function compare <A extends keyof AllType, B extends keyof AllType> (
   top: Pick <AllType, A> , bottom: Pick <AllType, B> ): AllType {
   const result: Partial<AllType> = {}; 
 
